@@ -15,13 +15,17 @@ class _PriceScreenState extends State<PriceScreen> {
         title: const Text('🤑 Coin Ticker'),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Padding(
             padding: EdgeInsets.fromLTRB(18.0, 18.0, 18.0, 0),
             child: Card(
               color: Colors.lightBlueAccent,
+              elevation: 5.0, // is a shadow
+              shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(10.0)
+              ),
               child: Padding(
                 padding: EdgeInsets.symmetric(vertical: 15.0, horizontal: 28.0),
                 child: Text(
@@ -33,6 +37,10 @@ class _PriceScreenState extends State<PriceScreen> {
             ),
           ),
           Container(
+            height: 150.0,
+            alignment: Alignment.center,
+            padding: EdgeInsets.only(bottom: 30.0),
+            color: Colors.lightBlue,
             child: null,
           )
         ],
