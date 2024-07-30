@@ -1,6 +1,6 @@
 # cypto_ticker
 
-A modern cryptocurrency ticket
+A modern cryptocurrency ticker
 
 ## Getting Started
 
